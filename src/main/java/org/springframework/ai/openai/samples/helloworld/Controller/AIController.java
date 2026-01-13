@@ -1,4 +1,4 @@
-package org.springframework.ai.openai.samples.helloworld;
+package org.springframework.ai.openai.samples.helloworld.Controller;
 
 import java.util.Map;
 
@@ -25,9 +25,9 @@ class AIController {
 		return Map.of(
 				"completion",
 				chatClient.prompt()
-						.user(message)
-						.call()
-						.content());
+					.user(message)
+					.call()
+					.content());
 	}
 
 	@GetMapping("/ImageGeneration")

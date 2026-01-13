@@ -21,8 +21,7 @@ public class ImageGenerationService {
         
             new ImagePrompt(prompt,
                 OpenAiImageOptions.builder()
-                        .withModel(OpenAiImageApi.ImageModel.DALL_E_2.getValue())
-                        //.withQuality("hd")
+                        .withModel("dall-e-2")
                         .withN(1)
                         .withHeight(256)
                         .withWidth(256)
